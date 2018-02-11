@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine
+FROM alpine:3.7
 
 ADD apk add --no-cache curl
 ADD apk add --no-cache git
