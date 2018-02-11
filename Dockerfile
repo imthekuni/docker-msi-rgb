@@ -1,4 +1,4 @@
-FROM gliderlabs/alpine:3.7
+FROM gliderlabs/alpine
 
 ADD
 
