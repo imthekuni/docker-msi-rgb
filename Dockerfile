@@ -1,4 +1,4 @@
-FROM alpine:3.7
+FROM jlesage/baseimage-gui:alpine-3.6-v3.3.2
 
 RUN apk add --no-cache curl
 RUN apk add --no-cache git
