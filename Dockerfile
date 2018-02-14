@@ -6,6 +6,6 @@ RUN apk add --no-cache rust cargo
 RUN apk add --no-cache make
 RUN git clone https://github.com/nagisa/msi-rgb && cd msi-rgb && cargo build --release
 
-COPY rootfs/ /
+# COPY rootfs/ /
 
-ENTRYPOINT ["/bin/bash"]
+ENTRYPOINT ["/bin/sh"]
