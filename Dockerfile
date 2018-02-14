@@ -3,7 +3,8 @@ FROM phusion/baseimage
 
 # RUN apk add --no-cache curl git rust cargo make
 RUN apt-get update
-RUN apt-get install git rust cargo
+RUN apt-get install curl git
+RUN curl https://sh.rustup.rs -sSf | sh
 
 RUN git clone https://github.com/nagisa/msi-rgb && cd msi-rgb && cargo build --release
 
