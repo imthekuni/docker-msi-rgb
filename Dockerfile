@@ -7,3 +7,5 @@ RUN apk add --no-cache make
 # RUN git clone https://github.com/nagisa/msi-rgb && cd msi-rgb && cargo build --release
 
 COPY rootfs/ /
+
+ENTRYPOINT [ "/bin/bash" ]
