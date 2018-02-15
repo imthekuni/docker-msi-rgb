@@ -1,6 +1,6 @@
 FROM phusion/baseimage
 
-RUN apt-get update && apt-get install -y gcc curl git
+RUN apt-get update && apt-get install -y gcc make curl git
 
 RUN curl https://sh.rustup.rs -sSf | \
     sh -s -- --default-toolchain stable -y
