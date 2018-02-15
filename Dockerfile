@@ -14,6 +14,4 @@ ENV PATH=/root/.cargo/bin:$PATH
 
 RUN git clone https://github.com/nagisa/msi-rgb && cd msi-rgb && cargo build --release
 
-# COPY rootfs/ /
-
 # ENTRYPOINT ["/bin/bash"]
