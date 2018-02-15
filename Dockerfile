@@ -2,7 +2,7 @@
 FROM phusion/baseimage
 
 # RUN apk add --no-cache curl wget git rust cargo make
-RUN apt-get update && apt-get install -y wget curl git
+RUN apt-get update && apt-get install -y wget curl git gcc
 
 RUN curl https://sh.rustup.rs -sSf | \
     sh -s -- --default-toolchain stable -y
